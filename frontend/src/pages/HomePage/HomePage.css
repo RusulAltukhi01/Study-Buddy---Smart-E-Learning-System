@@ -1,0 +1,78 @@
+.home-page {
+}
+
+.bg-shape1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 9999px;
+  position: relative;
+  animation: one 10s infinite;
+}
+.bg-shape2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  position: relative;
+  animation: two 10s infinite;
+}
+
+@keyframse one {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -100px;
+    top: 70px;
+  }
+  50% {
+    left: 20px;
+    top: 150px;
+  }
+  75% {
+    left: 50px;
+    top: 100px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframse two {
+  0% {
+    right: 10px;
+    bottom: 0px;
+  }
+  25% {
+    right: 50px;
+    bottom: 10px;
+  }
+  50% {
+    right: 100px;
+    bottom: 50px;
+  }
+  75% {
+    right: 50px;
+    bottom: 100px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+.bg-blur {
+  filter: blur(90px);
+}
+
+.bg-primary {
+  background-color: var(--cyan-mint-pastel);
+  opacity: 0.2;
+}
+.bg-teal {
+  background-color: var(--electric-light);
+  opacity: 0.2;
+}
+.bg-purple {
+  background-color: var(--bright-violet-pastel);
+}

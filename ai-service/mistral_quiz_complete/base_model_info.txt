@@ -1,0 +1,25 @@
+BASE MODEL: mistralai/Mistral-7B-Instruct-v0.2
+FINE-TUNING: LoRA
+TASK: Quiz Generation
+
+TO LOAD THIS MODEL:
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+from peft import PeftModel
+
+# Load base model
+base_model = AutoModelForCausalLM.from_pretrained(
+    'mistralai/Mistral-7B-Instruct-v0.2',
+    device_map='auto',
+    torch_dtype=torch.float16
+)
+
+# Load tokenizer
+tokenizer = AutoTokenizer.from_pretrained('mistralai/Mistral-7B-Instruct-v0.2')
+
+# Load LoRA weights
+model = PeftModel.from_pretrained(base_model, './lora')
+
+# Create pipeline
+generator = pipeline('text-generation', model=model, tokenizer=tokenizer)
+```

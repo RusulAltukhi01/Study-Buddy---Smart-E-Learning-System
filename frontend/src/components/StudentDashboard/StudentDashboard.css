@@ -1,0 +1,114 @@
+.student-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  /* background: #aed9e0;
+  background: linear-gradient(
+    304deg,
+    rgba(174, 217, 224, 0.39) 0%,
+    rgba(207, 232, 239, 0.44) 42%,
+    rgba(250, 243, 225, 0.47) 100%
+  ); */
+  background-color: var(--primary-background);
+}
+.student-dashboard .dashboard-content {
+  width: 100%;
+  min-height: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr); */
+  display: flex;
+  flex-direction: column;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1.4rem;
+}
+
+.student-dashboard .row {
+}
+
+.student-dashboard .item {
+  width: 100%;
+  min-height: 100px;
+  /* border: 1px solid gray; */
+  border-radius: 15px;
+}
+
+.student-dashboard .item1 {
+  grid-column: 1/9;
+  grid-row: 1;
+  /* background-color: white; */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.student-dashboard .item2 {
+  grid-column: 1/6;
+  grid-row: 2;
+}
+.student-dashboard .item3 {
+  grid-column: 2/8;
+  grid-row: 2;
+}
+.student-dashboard .item4 {
+  grid-column: 3/8;
+  grid-row: 2;
+}
+
+.student-dashboard .item5 {
+  grid-column: 4/9;
+  grid-row: 2;
+}
+
+.student-dashboard .item6 {
+  grid-column: 1/3;
+  grid-row: 4/8;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.student-dashboard .item7 {
+  grid-column: 3/9;
+  grid-row: 3/8;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.student-dashboard .item8 {
+  grid-column: 1/3;
+  width: 100%;
+}
+
+.stat-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: calc(var(--spacing) * 5);
+  margin: 3rem;
+}
+.student-dashboard .dashboard-cards {
+  display: grid;
+  grid-template-rows: repeat(250px, 1fr);
+  width: 90%;
+  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.student-classrooms {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

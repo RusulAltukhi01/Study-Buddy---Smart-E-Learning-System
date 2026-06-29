@@ -1,0 +1,42 @@
+
+.curriculums {
+}
+.cf-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* .cf-overlay-content {
+  position: relative;
+  z-index: 1001;  
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+} */
+
+.cf-overlay-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 1001;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #6b7280;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cf-overlay-close:hover {
+  color: #ef4444;
+  border-color: #fca5a5;
+}

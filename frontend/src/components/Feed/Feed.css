@@ -1,0 +1,14 @@
+
+.feed {
+}
+
+.class-activity-content ul li::before{
+    
+    content: "•";
+    color: var(--color-green-600);
+    font-size: 1.4em;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+}

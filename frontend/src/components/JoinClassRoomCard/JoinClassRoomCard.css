@@ -1,0 +1,17 @@
+/* JoinClassRoomCard.css */
+
+.join-card-blob {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(91, 192, 190, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Make the parent a positioning context for the blob */
+.join-card-blob ~ * {
+  position: relative;
+}

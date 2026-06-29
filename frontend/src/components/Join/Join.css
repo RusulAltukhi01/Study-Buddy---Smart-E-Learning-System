@@ -1,0 +1,159 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px 80px;
+  background: linear-gradient(160deg, #eef6f4 0%, #e8f0f8 60%, #f0f4fb 100%);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.join-hero {
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.join-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--dark-navy);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.join-title-accent {
+  color: #2ec4b6; 
+}
+
+.join-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 48px;
+}
+
+
+.join-card {
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 20px;
+  padding: 48px 40px 40px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.join-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.card-icon-wrapper {
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.card-icon-instructor {
+  background: #e6f7f5; 
+}
+
+.card-icon-student {
+  background: #e8edf8;
+}
+
+.card-icon-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+
+}
+
+
+
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 14px;
+}
+
+.card-desc {
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 280px;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+.card-btn-instructor {
+  background: #2ec4b6; 
+}
+
+.card-btn-student {
+  background: #3b6ef5;
+}
+
+.join-login-text {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.join-login-link {
+  color: #3b6ef5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.join-login-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .join-card {
+    width: 100%;
+    padding: 36px 24px 32px;
+  }
+}
+

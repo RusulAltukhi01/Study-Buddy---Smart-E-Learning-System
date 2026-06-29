@@ -1,0 +1,151 @@
+.web-header{
+  z-index: 9999;
+}
+.navbar-header {
+  display: flex;
+  position: fixed;
+  /* z-index: 1000; */
+  width: 100%;
+  /* min-height: 10vh; */
+  /* padding: 20px; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  /* padding: 15px; */
+  box-shadow:
+    rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.logo {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Coiny";
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.nav-options li {
+  margin: 0 10px;
+  letter-spacing: 1px;
+  color: var(--dark-navy);
+  cursor: pointer;
+}
+
+.nav-options li:hover {
+  text-shadow:
+    0 0 5px var(--electric),
+    0 0 25px var(--electricl),
+    0 0 50px var(--electric),
+    0 0 100px var(--electric);
+
+  color: var(--electric);
+}
+
+.nav-options li a.active {
+  color: var(--electric);
+  position: relative;
+}
+
+.nav-options li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--electric);
+  border-radius: 10px;
+  animation: slideIn 0.3s ease;
+}
+
+.nav-options li a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.auth-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  padding: 0 5px;
+}
+
+.auth-btns button {
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+header .signup {
+  color: var(--electric);
+  background-color: transparent;
+  border: 2px solid var(--electric);
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: var(--electric);
+  /* box-shadow: 0 0 25px var(--mid-navy); */
+}
+
+.shadow__btn:hover {
+  box-shadow:
+    0 0 5px var(--electric),
+    0 0 25px var(--electric),
+    0 0 50px var(--electric),
+    0 0 100px var(--electric);
+}
+
+.hello-user {
+  letter-spacing: 1px;
+}
+
+.user-name {
+  text-transform: capitalize;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-options,
+  .auth-btns {
+    display: none;
+    overflow: hidden;
+  }
+
+
+}

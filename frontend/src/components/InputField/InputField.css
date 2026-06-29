@@ -1,0 +1,19 @@
+.input-field {
+  background-color: #ffffff;
+}
+
+.input-field::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.input-field:disabled {
+  cursor: not-allowed;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border-color: #e5e7eb;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15);
+}

@@ -1,0 +1,55 @@
+.circular-progress-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.circular-progress-wrapper .CircularProgressbar-path {
+  filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.4));
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.circular-progress-wrapper:hover .CircularProgressbar-path {
+  filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.6));
+  transition: all 0.3s ease;
+}
+
+
+.circular-progress-wrapper .CircularProgressbar-text {
+  font-weight: 800;
+  fill: #1e293b;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+
+.circular-progress-wrapper[data-progress="high"] .CircularProgressbar-path {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(6, 182, 212, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.8));
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes gradientRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+

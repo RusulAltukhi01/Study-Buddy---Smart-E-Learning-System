@@ -1,0 +1,35 @@
+.ai-labs ul .ai-labs-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  min-height: 20vh;
+  padding: 2em;
+  border-radius: 15px;
+  gap: 12px;
+  border: 1px solid var(--color-gray-200);
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+.ai-labs ul .ai-labs-card span {
+  background-color: var(--electric-pastel);
+  padding: calc(var(--spacing) * 3);
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.ai-labs ul .ai-labs-card h2 {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: var(--dark-navy);
+}
+
+.ai-labs ul .ai-labs-card p {
+  color: var(--color-gray-500);
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-left: 6px;
+}

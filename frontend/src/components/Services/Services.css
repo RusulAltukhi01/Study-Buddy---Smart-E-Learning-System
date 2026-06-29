@@ -1,0 +1,67 @@
+
+.services {
+
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 30px;
+    margin: 0 auto;
+
+}
+
+.section-title h1{
+
+    font-family: 'Inter';
+    font-weight: 700;
+    color: var(--dark-navy);
+    font-size: 48px;
+    letter-spacing: 1px;
+    margin: 25px 0;
+}
+
+.services-cards{
+    display: flex;
+    min-width: 50%;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+
+}
+
+.feat-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: calc(var(--spacing) * 150);
+    margin: 15px 0;
+    background-color: rgba(220, 220, 220, 0.201);
+    padding: 10px 16px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.feat-card h2{
+    font-weight: 600;
+
+}
+.instructor-features  .feat-card h2{
+    font-weight: 600;
+    color:var(--cyan-mint-dark)
+}
+.student-features  .feat-card h2{
+    font-weight: 600;
+    color:var(--bright-purple)
+}
+
+.feat{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feat-card span{
+    color: gray;
+}

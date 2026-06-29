@@ -1,0 +1,13 @@
+
+.students .list-tools button {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 3);
+    cursor: pointer;
+    font-weight: 700;
+}
+

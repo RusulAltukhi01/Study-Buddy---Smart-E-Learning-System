@@ -1,0 +1,179 @@
+.overlay-form {
+  position: relative;
+  max-width: 900px;
+  width: 90%;
+  min-height: 70vh;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+  
+}
+
+.overlay-form fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: none;
+}
+
+.overlay-form label {
+  font-weight: 500;
+  color: var(--color-gray-600);
+  font-weight: 700;
+  
+}
+
+.overlay-form input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.overlay-form input:focus {
+  border-color: var(--bright-violet);
+  transition: all 0.2s ease;
+}
+
+.date-picker {
+  width: 100%;
+}
+
+.react-datetime-picker__wrapper {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: white;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform all 0.15s ease;
+}
+
+.react-datetime-picker__wrapper:focus-within {
+  border-color: var(--bright-violet);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
+  transform: translateY(-1px);
+}
+
+.react-calendar {
+  border: none;
+  border-radius: 16px;
+  padding: 0.75rem;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 0.5rem;
+}
+
+.react-calendar__navigation button {
+  border-radius:5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.react-calendar__navigation button:enabled:hover {
+  background: rgba(124, 58, 237, 0.12);
+  transform: translateY(-1px);
+  transition: all 0.1s ease;
+}
+
+.react-calendar__month-view__weekdays {
+  margin-bottom: 0.5rem;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.react-calendar__tile {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition:
+    background-color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.react-calendar__tile--active {
+  background: var(--bright-violet) !important;
+  color: white !important;
+  transition: background-color 0.2s ease;
+}
+
+.react-calendar__tile--now {
+  border: 2px solid var(--bright-violet);
+  background: transparent !important;
+}
+
+.react-calendar__tile:enabled:hover {
+  background: rgba(124, 58, 237, 0.15);
+  transform: scale(1.08);
+}
+
+.react-datetime-picker__inputGroup__amPm {
+  appearance: none;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.react-datetime-picker__inputGroup__amPm:hover {
+  color: var(--bright-violet);
+}
+.react-datetime-picker__inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.react-datetime-picker__inputGroup__input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+
+.react-datetime-picker__inputGroup__divider {
+  padding: 0 2px;
+}
+.react-datetime-picker__calendar {
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px) scale(0.96);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.react-datetime-picker--open .react-datetime-picker__calendar {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.react-datetime-picker__button {
+  padding: 0;
+}
+
+.react-datetime-picker__button svg {
+  stroke: var(--bright-violet);
+}

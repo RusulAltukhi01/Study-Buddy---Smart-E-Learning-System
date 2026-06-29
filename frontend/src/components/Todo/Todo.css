@@ -1,0 +1,32 @@
+.todo {
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-gray-200);
+  border-radius: 20px;
+  color: var(--dark-navy);
+}
+
+.todo-tabs ul li {
+  cursor: pointer;
+  background: var(--color-gray-200);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.todo-tabs ul li.active {
+  background-color: var(--electric);
+  color: white;
+  border: 1px solid var(--electric-dark);
+  transition: all 0.2s ease-out;
+}
+
+.overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}

@@ -1,0 +1,56 @@
+.dashboard-header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+
+
+
+}
+.dash-header-titles{
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+
+
+}
+
+.dash-header-titles h1{
+
+    color: var(--dark-navy);
+    font-weight: 900;
+
+
+}
+
+.dash-header-titles .user-name{
+
+    color: var(--electric);
+}
+
+.header-reminder{
+    color: var(--color-gray-500);
+    letter-spacing: 0.5px;
+
+}
+
+.dashboard-header h3 span{
+    font-weight: 600;
+    color: var(--dark-navy);
+}
+
+.dashboard-header ul li{
+    border-radius: 50%;
+    background-color: var(--electric-dark);
+    width: fit-content;
+    height: auto;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.dashboard-header ul li:hover{
+    background-color: var(--electric);
+    transition: all 0.2s ease;
+}

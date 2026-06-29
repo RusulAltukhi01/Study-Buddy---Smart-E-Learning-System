@@ -1,0 +1,249 @@
+:root {
+  --card-bg: #ffffff;
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  --card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --border-radius: 16px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.quick-stats-card {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 12vw;
+  height: 23vh;
+  
+
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 0 0 0 100%;
+  z-index: 0;
+  opacity: 0.5;
+  transition: var(--transition);
+}
+
+.quick-stats-card:hover .card-decoration {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.quick-stats-card:hover .icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.stat-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.trend-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trend-badge.positive {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+}
+
+.trend-badge.negative {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #F44336;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.stat-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.stat-value-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1;
+  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.stat-subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .quick-stats-card {
+    padding: 20px;
+    min-height: 180px;
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+  }
+  
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .quick-stats-card {
+    min-height: 170px;
+  }
+  
+  .stat-value {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .quick-stats-card {
+    min-height: 160px;
+    padding: 18px;
+  }
+  
+  .card-header {
+    margin-bottom: 20px;
+  }
+  
+  .icon-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .stat-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+  
+  .stat-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .quick-stats-card {
+    min-height: 150px;
+  }
+  
+  .stat-value {
+    font-size: 1.8rem;
+  }
+  
+  .stat-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .quick-stats-card {
+    padding: 20px;
+    min-height: 140px;
+  }
+  
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+  
+  .card-header {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Animation on load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quick-stats-card {
+  animation: fadeInUp 0.6s ease-out;
+}

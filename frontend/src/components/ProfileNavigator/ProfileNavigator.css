@@ -1,0 +1,32 @@
+
+.profile-navigator ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-gray-400);
+    padding: 20px 2px 12px 2px;
+    flex: 1 1 auto;
+    transition: all 0.2s ease;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.profile-navigator ul li:hover{
+    background-color: var(--electric-pastel);
+    color: var(--electric);
+    
+    
+}
+.profile-navigator ul li:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border: 2px solid var(--electric);
+    width: 100%;
+}
+

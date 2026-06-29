@@ -1,0 +1,32 @@
+
+.small-menu {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  margin-top: 8px;
+  width: 160px;
+  min-height: 180px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  z-index: 100;
+  border: 1px solid var(--color-gray-200);
+}
+
+.small-menu ul li{
+
+    font-size: 14px;
+    padding: 4px 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.small-menu ul li:hover{
+    background-color: var(--color-gray-100);
+    width: 100%;
+}
+
+

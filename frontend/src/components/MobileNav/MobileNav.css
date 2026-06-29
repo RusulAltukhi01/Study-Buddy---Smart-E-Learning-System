@@ -1,0 +1,11 @@
+
+.mobile-nav {
+    display: block;
+    background-color: var(--white);
+    width: 100%;
+    min-height: 10vh;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    right: 0;
+}
